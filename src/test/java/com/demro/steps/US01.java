@@ -9,6 +9,7 @@ public class US01 {
     @Given("Establish the database connection")
     public void establish_the_database_connection() {
         DB_Util.createConnection();
+        System.out.println("shabault cyka");
     }
     @When("Execute query to get all IDs from users")
     public void execute_query_to_get_all_i_ds_from_users() {
