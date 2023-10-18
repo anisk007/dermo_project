@@ -10,7 +10,6 @@ import java.sql.ResultSet;
 import java.util.List;
 
 public class US01 {
-    ResultSet Rs;
     int Cyka1;
     int Cyka2;
     @Given("Establish the database connection")
@@ -33,7 +32,7 @@ public class US01 {
 
     @When("Execute query to get all columns")
     public void execute_query_to_get_all_columns() {
-       Rs= DB_Util.runQuery("select * from users");
+        DB_Util.runQuery("select * from users");
     }
 
     @Then("verify the below columns are listed in result")
